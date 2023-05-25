@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Spring Boot WebSocket Chat Application | CalliCoder</title>
+    <link rel="stylesheet" href="/css/mainAdmin.css" />
+</head>
+<body>
+<noscript>
+    <h2>Sorry! Your browser doesn't support Javascript</h2>
+</noscript>
+
+<div id="username-page">
+    <div class="username-page-container">
+        <h1 class="title">Введите своё имя</h1>
+        <form id="usernameForm" name="usernameForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Имя" autocomplete="off" class="form-control" />
+            </div>
+            <div class="form-group">
+                <button type="submit" class="accent username-submit">Начать чат</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="chat-page" class="hidden">
+
+
+    <div class="chat-container">
+        <div class="chatButtonCategories">
+           <a href="http://localhost:8080/"> <button class="buttonOne">Кредиты</button></a>
+           <a href="http://localhost:8080/"> <button class="buttonTwo">Страхование</button></a>
+           <a href="http://localhost:8080/"> <button class="buttonThree">Вклады</button></a>
+        </div>
+
+        <div class="chat-header">
+            <h2>Чат с тех.поддержкой</h2>
+        </div>
+        <div class="connecting">
+            Подключение...
+        </div>
+        <ul id="messageArea">
+
+        </ul>
+        <form id="messageForm" name="messageForm" nameForm="messageForm">
+            <div class="form-group">
+                <div class="input-group clearfix">
+                    <input type="text" id="message" placeholder="Напишите сообщение..." autocomplete="off" class="form-control"/>
+                    <button type="submit" class="primary">Отправить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/mainAdmin.js"></script>
+</body>
+</html>
