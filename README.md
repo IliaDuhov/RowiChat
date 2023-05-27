@@ -1,5 +1,6 @@
-# HACK2023
- 
+#Hack 2023
+@OnlyNotSlytherin
+@IliaDuhov
 Запуск приложения через пользователя:
 
 Запустить метод main в классе DemoApplication папки client,
@@ -19,3 +20,4 @@
 Следовать указаниям на страничке
 
 Настроить keycloak следуя описанию application.properties
+
